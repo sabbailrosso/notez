@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#B2EDB5"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txtTitolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/txtAutore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/txtTesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp" />
+
+            <Button
+                android:id="@+id/btnModifica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:focusable="false"
+                android:text="  Modifica"
+                android:textAlignment="textStart"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCancella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:focusable="false"
+                android:text="  cancella"
+                android:textAlignment="textStart"
+                android:textColor="@color/design_default_color_error"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </Space>
+</androidx.appcompat.widget.LinearLayoutCompat>
